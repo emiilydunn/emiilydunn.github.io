@@ -1,30 +1,17 @@
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Cursive', sans-serif;
 }
 
-.hero {
-    background: #3498db;
-    color: #fff;
-    text-align: center;
-    padding: 80px 0;
-}
-
-.hero h1 {
-    margin: 0;
-}
-
-.hero p {
-    margin-top: 10px;
-}
 
 .navbar {
-    background: #333;
-    color: #fff;
+    background: #cfc9bd; /* Light taupe */
+    color: #554d42; /* Dark olive text */
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: 15px;
+    font-size: 20px;
 }
 
 .nav-list {
@@ -33,51 +20,102 @@ body {
 }
 
 .nav-list li {
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .nav-list a {
     text-decoration: none;
-    color: #fff;
+    color: #554d42; 
     font-weight: bold;
     transition: color 0.3s;
 }
 
 .nav-list a:hover {
-    color: #3498db;
+    color: #406243; 
     transition: color 0.3s;
 }
 
-.menu-toggle {
-    cursor: pointer;
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
+.header{
+    color:#406243;
+    background: #cfc9bd; /* Light taupe */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-size: 20px;
 }
 
-.bar {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 5px 0;
+
+.home-section {
+    background: #d7d2c8; /* Light taupe */
+    padding: 50px 0;
 }
+
+.home-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.home-content h2 {
+    color: #406243; /* Forest green */
+}
+
+.home-content p {
+    color: #554d42; /* Dark olive text */
+    margin-bottom: 30px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project {
+    margin: 15px;
+    text-align: center;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    margin: 10px 0;
+    color: #406243; /* Forest green */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #406243; /* Forest green */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #284632; /* Darker green on hover */
+}
+
 
 @media screen and (max-width: 768px) {
-    .menu-toggle {
-        display: flex;
-    }
-
-    .nav-list {
-        display: none;
+    .navbar {
         flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 15px;
-        background: #333;
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
+        background: #cfc9bd; /* Light taupe */
+        padding-top: 60px;
     }
 
-    .nav-list.show {
-        display: flex;
+    .navbar li {
+        margin: 0;
+        text-align: center;
     }
 }
