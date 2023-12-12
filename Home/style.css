@@ -42,7 +42,7 @@ body {
 }
 
 .home-section {
-    background: #EEE7DA url("/Home/Images/white-background-with-fresh-green-yellow-leaves-border-greeting-card_442886-593.jpg") bottom center no-repeat;
+    background: #EEE7DA url("/Images/white-background-with-fresh-green-yellow-leaves-border-greeting-card_442886-593.jpg") bottom center no-repeat;
     background-size: cover; /* Ensure the background image covers the entire section */
     padding: 50px 20px;
     text-align: center;
