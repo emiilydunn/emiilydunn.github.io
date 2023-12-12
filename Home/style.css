@@ -42,7 +42,7 @@ body {
 }
 
 .home-section {
-    background: #EEE7DA url("Images/white-background-with-fresh-green-yellow-leaves-border-greeting-card_442886-593.jpg") bottom center no-repeat;
+    background: #EEE7DA url("Home/Images/img") bottom center no-repeat;
     background-size: cover; /* Ensure the background image covers the entire section */
     padding: 50px 20px;
     text-align: center;
@@ -50,6 +50,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center content vertically */
+    min-height: 100vh; /* Ensure the section takes the full viewport height */
 }
 
 .home-content {
@@ -57,29 +58,43 @@ body {
     margin: auto; /* Center content horizontally */
 }
 
-#title{
-    color:#406243;
-    font-size: 30px;
-    margin-bottom: 10px;
+#title {
+    color: #406243;
+    font-size: 40px;
+    margin-bottom: 30px;
+    margin-top: -150px;
 }
 
-#intro-text{
-    color:#406243;
-    font-size: 17px;
+#intro-text {
+    color: #406243;
+    font-size: 20px;
     margin-top: 40px;
 }
 
-#portfolio{
-    color:#406243;
+#portfolio {
+    color: #406243;
     font-size: 25px;
-    margin-top: -100px;
+    margin-top: -200px;
 }
-
 
 footer {
     text-align: center;
     padding: 5px;
-    background: lightgrey;
-    color: #406243;
+    color: black;
     margin-top: auto; /* Push the footer to the bottom */
+}
+/* Media Query for Mobile */
+@media screen and (max-width: 768px) {
+    .nav-list {
+        flex-direction: row; /* Change direction back to row for larger screens */
+        align-items: center; /* Align items to the center for larger screens */
+    }
+
+    .nav-list li {
+        margin-top: 0; /* Reset margin for list items for larger screens */
+    }
+
+    #portfolio {
+        margin-top: -100px; /* Adjust spacing back to original for larger screens */
+    }
 }
