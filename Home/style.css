@@ -1,18 +1,19 @@
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #F2F1EB; /* Lightest taupe */
+    font-family: "Muli";
+    background-color: #fff8f2;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+    min-height: 100vh;
+    border:25px solid white;
 }
 
 .navbar {
-    background: lightgrey;
-    color: #406243; /* Dark green text */
+    background: #fff8f2;
+    color: #406243;
     padding: 25px;
     text-align: right;
-    font-size: 18px;
+    font-size: 25px;
 }
 
 .nav-list {
@@ -28,41 +29,70 @@ body {
 
 .nav-list a {
     text-decoration: none;
-    color: #406243; /* Dark green text */
+    color: #406243;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 .nav-list .nav-item.active a {
-    color: black;
+    color: #4d5057;
 }
 
 .nav-list a:hover {
     color: black;
 }
 
-.home-section {
-    background: #EEE7DA url("/Images/white-background-with-fresh-green-yellow-leaves-border-greeting-card_442886-593.jpg") bottom center no-repeat;
-    background-size: cover; /* Ensure the background image covers the entire section */
-    padding: 50px 20px;
-    text-align: center;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    min-height: 100vh; /* Ensure the section takes the full viewport height */
+.wrapper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
 }
 
-.home-content {
-    max-width: 800px;
-    margin: auto; /* Center content horizontally */
+.grid-container {
+    display: grid;
+    gap: 20px;
+    border: 5px solid black;
+    max-width: 1000px;
+    padding:100px;
+}
+
+.grid-item {
+    background-color: #fff8f2;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+}
+
+.grid-container p {
+    font-family: "Muli";
+}
+
+#aboutMe {
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+    border: 10px solid transparent;
+    border-image: url("/Images/64be9f784c95aad203074230_dot_pattern-min.png") 10 repeat;
+}
+
+@font-face {
+    font-family: "Muli";
+    src: url("/Fonts/muli/Muli.ttf");
+}
+
+@font-face {
+    font-family: "MuliXB";
+    src: url("/Fonts/muli/Muli-Bold.ttf");
 }
 
 #title {
     color: #406243;
     font-size: 40px;
-    margin-bottom: 30px;
-    margin-top: -150px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: "MuliXB";
+    font-weight: bold;
 }
 
 #intro-text {
@@ -74,27 +104,27 @@ body {
 #portfolio {
     color: #406243;
     font-size: 25px;
-    margin-top: -200px;
+    margin-top: 50px;
 }
 
 footer {
     text-align: center;
     padding: 5px;
     color: black;
-    margin-top: auto; /* Push the footer to the bottom */
 }
+
 /* Media Query for Mobile */
 @media screen and (max-width: 768px) {
     .nav-list {
-        flex-direction: row; /* Change direction back to row for larger screens */
-        align-items: center; /* Align items to the center for larger screens */
+        flex-direction: row;
+        align-items: center;
     }
 
     .nav-list li {
-        margin-top: 0; /* Reset margin for list items for larger screens */
+        margin-top: 0;
     }
 
     #portfolio {
-        margin-top: -100px; /* Adjust spacing back to original for larger screens */
+        margin-top: -100px;
     }
 }
