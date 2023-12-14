@@ -1,6 +1,5 @@
 body {
-    margin: 0;
-    font-family: "Muli";
+    font-family: "Muli", sans-serif;
     background-color: #fff8f2;
     display: flex;
     flex-direction: column;
@@ -73,31 +72,49 @@ body {
     background-color: #fff8f2;
     padding: 20px;
     text-align: left;
-    border: 1px solid #ddd;
 }
 
 .image-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     gap: 10px;
     color: #4d5057;
 }
 
-.image-item {
-    text-align: center;
-}
-
-.image-container a{
+.image-container a {
     text-decoration: none;
+    color: #406243;
+    font-weight: bold;
+    transition: color 0.3s;
+    position: relative;
 }
 
-.image-container a:hover{
-    cursor: pointer;
+.image-container a:hover {
+    color: black;
+}
+
+.image-container a::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%; /* Center the pseudo-element under the link */
+    transform: translateX(-50%); /* Move the pseudo-element left by half its width */
+    width: 0;
+    height: 20px;
+    background-color: #ffe872;
+    transition: width 0.3s, bottom 0.3s;
+    z-index: -1; /* Set a lower z-index to be below the text */
+
+}
+
+.image-container a:hover::before {
+    width: 100%;
+    bottom: 0;
 }
 
 .image-container img {
-    margin: 10px; /* Adjust the margin as needed */
+    margin: 10px;
 }
 
 .text-container h2,
