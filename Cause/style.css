@@ -60,23 +60,52 @@ body {
 .nav-list a:hover {
     color: black;
 }
+
 .grid-container {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
     margin: 20px;
     border: 5px solid black;
 }
 
-.grid-item {
+.text-container {
     background-color: #fff8f2;
     padding: 20px;
     text-align: left;
     border: 1px solid #ddd;
 }
 
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #4d5057;
+}
+
+.image-container a{
+    text-decoration: none;
+}
+
+.image-container a:hover{
+    cursor: pointer;
+}
+
+.image-container img {
+    margin: 10px; /* Adjust the margin as needed */
+}
+
+.text-container h2,
+.text-container h3,
+.text-container p {
+    margin: 0;
+    color: #4d5057;
+}
+
 .grid-container p {
     font-family: "Muli";
-    color:#4d5057;
+    color: #4d5057;
 }
 
 @font-face {
