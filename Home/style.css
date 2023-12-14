@@ -74,6 +74,7 @@ body {
     border: 5px solid black;
     max-width: 1000px;
     padding: 100px;
+    
 }
 
 .grid-item {
@@ -85,14 +86,6 @@ body {
 
 .grid-container p {
     font-family: "Muli";
-}
-
-#aboutMe {
-    width: 50%;
-    height: auto;
-    border-radius: 5px;
-    border: 10px solid transparent;
-    border-image: url("/Images/64be9f784c95aad203074230_dot_pattern-min.png") 10 repeat;
 }
 
 @font-face {

@@ -74,12 +74,19 @@ body {
     background-color: #fff8f2;
     padding: 20px;
     text-align: center;
-    border: 1px solid #ddd;
 }
 
 .grid-container p {
     font-family: "Muli";
     color:#4d5057;
+}
+
+#hackathon{
+    width: 40%;
+}
+.grid-container img{
+    width: 75%;
+    height: auto;
 }
 
 
