@@ -129,6 +129,12 @@ body {
     color: #4d5057;
 }
 
+footer {
+    text-align: center;
+    padding: 5px;
+    color: rgba(0, 0, 0, .5);
+}
+
 @font-face {
     font-family: "Muli";
     src: url("/Fonts/muli/Muli.ttf");
