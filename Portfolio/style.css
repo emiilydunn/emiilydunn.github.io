@@ -104,3 +104,38 @@ footer {
     font-family: "MuliXB";
     src:url("/Fonts/muli/Muli-Bold.ttf");
 }
+/* Your existing styles go here */
+
+@media only screen and (max-width: 600px) {
+    /* Styles for screens 600px wide or less go here */
+    
+    .navbar {
+        text-align: center;
+    }
+
+    .nav-list {
+        justify-content: center;
+    }
+
+    .nav-list li {
+        margin-left: 10px;
+    }
+
+    .grid-container {
+        margin: 10px;
+    }
+
+    .text-container {
+        padding: 10px;
+    }
+
+    .image-container {
+        gap: 5px;
+    }
+
+    .image-container img {
+        margin: 5px;
+    }
+
+    /* Add more styles as needed for better mobile responsiveness */
+}

@@ -88,6 +88,7 @@ body {
     font-weight: bold;
     transition: color 0.3s;
     position: relative;
+    z-index: 1;
 }
 
 .image-container a:hover {
@@ -97,14 +98,14 @@ body {
 .image-container a::before {
     content: "";
     position: absolute;
-    bottom: -5px;
-    left: 50%; /* Center the pseudo-element under the link */
-    transform: translateX(-50%); /* Move the pseudo-element left by half its width */
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 0;
-    height: 20px;
+    height: 15px;
     background-color: #ffe872;
     transition: width 0.3s, bottom 0.3s;
-    z-index: -1; /* Set a lower z-index to be below the text */
+    z-index: -1;
 
 }
 
@@ -143,4 +144,34 @@ footer {
 @font-face {
     font-family: "MuliXB";
     src: url("/Fonts/muli/Muli-Bold.ttf");
+}
+
+/* Media Query for Mobile */
+@media (max-width: 600px) {
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+
+    .navbar {
+        font-size: 18px;
+    }
+
+    .nav-list .nav-item::before,
+    .nav-list .nav-item.active::before,
+    .nav-list .nav-item:hover::before {
+        height: 10px;
+    }
+
+    .text-container {
+        padding: 15px;
+    }
+
+    .image-container a::before {
+        height: 10px;
+    }
 }
