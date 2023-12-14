@@ -5,7 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    border:25px solid white;
+    border: 25px solid white;
 }
 
 .navbar {
@@ -25,6 +25,7 @@ body {
 
 .nav-list li {
     margin-left: 20px;
+    position: relative;
 }
 
 .nav-list a {
@@ -32,10 +33,28 @@ body {
     color: #406243;
     font-weight: bold;
     transition: color 0.3s;
+    position: relative;
 }
 
 .nav-list .nav-item.active a {
     color: #4d5057;
+}
+
+.nav-list .nav-item::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 15px;
+    background-color: #ffe872;
+    transition: width 0.3s, bottom 0.3s;
+}
+
+.nav-list .nav-item.active::before,
+.nav-list .nav-item:hover::before {
+    width: 100%;
+    bottom: 0;
 }
 
 .nav-list a:hover {
@@ -58,23 +77,24 @@ body {
     border: 1px solid #ddd;
 }
 
-.grid-container p{
+.grid-container p {
     font-family: "Muli";
 }
 
-#aboutMe{
-width: 50%;
-height: auto;
-border-radius: 5px;
-border: 10px solid transparent;
-border-image: url("/Images/64be9f784c95aad203074230_dot\ pattern-min.png") 10 repeat;
+#aboutMe {
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+    border: 10px solid transparent;
+    border-image: url("/Images/64be9f784c95aad203074230_dot\ pattern-min.png") 10 repeat;
 }
 
-@font-face{
+@font-face {
     font-family: "Muli";
-    src:url("/Fonts/muli/Muli.ttf");
+    src: url("/Fonts/muli/Muli.ttf");
 }
-@font-face{
+
+@font-face {
     font-family: "MuliXB";
-    src:url("/Fonts/muli/Muli-Bold.ttf");
+    src: url("/Fonts/muli/Muli-Bold.ttf");
 }
