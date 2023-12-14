@@ -79,14 +79,25 @@ body {
 
 .grid-container p {
     font-family: "Muli";
+    color:#4d5057;
 }
 
-#aboutMe {
-    width: 50%;
-    height: auto;
-    border-radius: 5px;
-    border: 10px solid transparent;
-    border-image: url("/Images/64be9f784c95aad203074230_dot\ pattern-min.png") 10 repeat;
+button {
+    min-width: 200px;
+    text-align: center;
+    background-color: #fff8f2;
+    border: 3px solid black;
+    padding: 11px 32px 12px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 0 0 3px #000;
+    color: black;
+    }
+
+button:hover{
+    color: #fff8f2;
+    cursor:pointer;
+    background-color: black;
 }
 
 @font-face {
@@ -98,3 +109,6 @@ body {
     font-family: "MuliXB";
     src: url("/Fonts/muli/Muli-Bold.ttf");
 }
+
+
+
