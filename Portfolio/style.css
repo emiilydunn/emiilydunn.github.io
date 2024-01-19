@@ -61,6 +61,13 @@ body {
     color: black;
 }
 
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
 .grid-container {
     display: grid;
     gap: 20px;
@@ -74,6 +81,7 @@ body {
     background-color: #fff8f2;
     padding: 20px;
     text-align: center;
+    margin: auto;
 }
 
 .grid-container p {
