@@ -5,7 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    border:25px solid white;
+    border: 25px solid white;
 }
 
 .navbar {
@@ -74,8 +74,8 @@ body {
     border: 5px solid black;
     max-width: 1000px;
     padding: 100px;
+    
 }
-
 
 .grid-item {
     background-color: #fff8f2;
@@ -86,15 +86,37 @@ body {
 
 .grid-container p {
     font-family: "Muli";
-    color:#4d5057;
 }
 
-#hackathon{
-    width: 40%;
+@font-face {
+    font-family: "Muli";
+    src: url("/Fonts/muli/Muli.ttf");
 }
-.grid-container img{
-    width: 75%;
-    height: auto;
+
+@font-face {
+    font-family: "MuliXB";
+    src: url("/Fonts/muli/Muli-Bold.ttf");
+}
+
+#title {
+    color: #406243;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: "MuliXB";
+    font-weight: bold;
+}
+
+#intro-text {
+    color: #406243;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+#portfolio {
+    color: #406243;
+    font-size: 25px;
+    margin-top: 50px;
 }
 
 footer {
@@ -103,47 +125,50 @@ footer {
     color: rgba(0, 0, 0, .5);
 }
 
-
-@font-face{
-    font-family: "Muli";
-    src:url("/Fonts/muli/Muli.ttf");
-}
-@font-face{
-    font-family: "MuliXB";
-    src:url("/Fonts/muli/Muli-Bold.ttf");
-}
-/* Your existing styles go here */
-
-@media only screen and (max-width: 600px) {
-    /* Styles for screens 600px wide or less go here */
-    
+@media screen and (max-width: 768px) {
     .navbar {
+        padding: 15px;
         text-align: center;
     }
 
     .nav-list {
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 
     .nav-list li {
-        margin-left: 10px;
+        margin: 10px 0;
+    }
+
+    .nav-list a {
+        font-size: 16px;
     }
 
     .grid-container {
-        margin: 10px;
+        padding: 10px;
+        border: 3px solid black;
     }
 
-    .text-container {
+    .grid-item {
         padding: 10px;
     }
 
-    .image-container {
-        gap: 5px;
+    #title {
+        margin-top: 10px;
+        font-size: 30px;
     }
 
-    .image-container img {
-        margin: 5px;
+    #intro-text {
+        margin-top: 10px;
+        font-size: 16px;
     }
 
-    /* Add more styles as needed for better mobile responsiveness */
+    #portfolio {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    footer {
+        padding: 10px;
+    }
 }
