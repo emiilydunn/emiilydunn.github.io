@@ -90,12 +90,12 @@ body {
 
 @font-face {
     font-family: "Muli";
-    src: url("/emiilydunn.github.io/Fonts/muli/Muli.ttf");
+    src: url("/Fonts/muli/Muli.ttf");
 }
 
 @font-face {
     font-family: "MuliXB";
-    src: url("/emiilydunn.github.io/Fonts/muli/Muli-Bold.ttf");
+    src: url("/Fonts/muli/Muli-Bold.ttf");
 }
 
 #title {
