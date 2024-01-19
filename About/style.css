@@ -76,7 +76,8 @@ body {
     padding: 20px;
     text-align: center;
     border: 10px solid white;
-    height: 500px;
+    height: 250px;
+    justify-content: center;
 }
 
 .grid-container p {
