@@ -76,8 +76,14 @@ body {
     padding: 20px;
     text-align: center;
     border: 10px solid white;
-    height: 250px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 500px; /* Adjust the maximum width as needed */
+    height: 250px;
+    margin: auto; /* Center the grid item horizontally */
+    margin-top: 20px;
 }
 
 .grid-container p {
