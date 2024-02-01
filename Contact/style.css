@@ -74,55 +74,57 @@ body {
     border: 5px solid black;
     max-width: 1000px;
     padding: 100px;
-    
 }
 
-.grid-item {
-    background-color: #fff8f2;
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
     padding: 20px;
-    text-align: center;
-    margin: auto;
 }
 
-.grid-container p {
-    font-family: "Muli";
+.contact-info img {
+    max-width: 100%;
+    height: auto;
 }
-
-@font-face {
-    font-family: "Muli";
-    src: url("/Fonts/muli/Muli.ttf");
-}
-
-@font-face {
-    font-family: "MuliXB";
-    src: url("/Fonts/muli/Muli-Bold.ttf");
-}
-
-#title {
+button#submit {
+    background-color: #fff8f2;
     color: #406243;
-    font-size: 40px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-family: "MuliXB";
-    font-weight: bold;
+    border: 1px solid #406243; /* Set the border here */
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 1px;
+    cursor: pointer;
+    width: 30%;
 }
 
-#intro-text {
-    color: #406243;
-    font-size: 20px;
-    margin-top: 40px;
+/* Hover effect */
+button#submit:hover {
+    background-color: #406243;
+    color: #fff8f2;
+    border: none;
 }
 
-#portfolio {
-    color: #406243;
-    font-size: 25px;
-    margin-top: 50px;
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-footer {
-    text-align: center;
-    padding: 5px;
-    color: rgba(0, 0, 0, .5);
+form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fffdf9; /* Set the background color here */
+    border: 1px solid #406243; /* Add a border for clarity */
+}
+
+form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fffdf9; /* Set the background color here */
+    border: 1px solid #406243; /* Add a border for clarity */
 }
 
 @media screen and (max-width: 768px) {

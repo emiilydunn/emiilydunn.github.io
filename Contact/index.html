@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="/Images/img.icons8.png">
 </head>
@@ -19,14 +19,28 @@
 </nav>
 
 <div class="wrapper">
-<div class="grid-container">
-    <div class="grid-item">
-        <h2 id = "title">Contact Me Page</h2>
-        <p id="intro-text">Still workin' on it</p>
-        <h2 id="portfolio">See u soon bye luv u &lt;3</h2>
+    <div class="grid-container">
+        <div class="row">
+            <div class="column contact-info">
+                <h2 id="title">Contact Me</h2>
+                <img src="your-image-url.jpg" alt="Contact Image"/>
+            </div>
+            <div class="column contact-form">
+
+                <form>
+                    <label for="name" id="intro-text">Name</label>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="email" id="intro-text">E-mail</label>
+                    <input type="text" id="email" name="email"><br><br>
+                    <label for="message" id="intro-text">Message</label>
+                    <textarea id="message" name="message" style="height: 75px; width: 300px"></textarea><br><br>
+                    <button id="submit">Submit</button>
+                </form>
+
+            </div>
+        </div>
     </div>
-    </div>
-</div>  
+</div>
  
 <footer>
     &copy; Emily Dunn | 2023
