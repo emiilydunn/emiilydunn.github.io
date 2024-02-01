@@ -126,6 +126,15 @@ form textarea {
     background-color: #fffdf9; /* Set the background color here */
     border: 1px solid #406243; /* Add a border for clarity */
 }
+@font-face {
+    font-family: "Muli";
+    src: url("/Fonts/muli/Muli.ttf");
+}
+
+@font-face {
+    font-family: "MuliXB";
+    src: url("/Fonts/muli/Muli-Bold.ttf");
+}
 
 @media screen and (max-width: 768px) {
     .navbar {

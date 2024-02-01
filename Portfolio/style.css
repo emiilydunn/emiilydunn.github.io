@@ -77,14 +77,11 @@ body {
     
 }
 
-.column {
-    display: inline-block;
-    width: 50%;
-}
-
-.row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.grid-item {
+    background-color: #fff8f2;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
 }
 
 .grid-container p {
@@ -120,19 +117,6 @@ body {
     color: #406243;
     font-size: 25px;
     margin-top: 50px;
-}
-
-#submit {
-    width: 10px; /* Adjust the width as needed */
-    padding: 10px; /* Add padding for better aesthetics */
-    background-color: #406243; /* Choose your desired background color */
-    color: white; /* Set text color to white for better contrast */
-    border: none; /* Remove default button border */
-    cursor: pointer; /* Add a pointer cursor on hover */
-}
-
-button#submit:hover {
-    background-color: black; /* Change background color on hover */
 }
 
 footer {
