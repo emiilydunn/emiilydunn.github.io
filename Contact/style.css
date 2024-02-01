@@ -135,6 +135,12 @@ form textarea {
     font-family: "MuliXB";
     src: url("/Fonts/muli/Muli-Bold.ttf");
 }
+footer {
+    text-align: center;
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: auto; /* Add this line to ensure the footer is at the bottom */
+}
 
 @media screen and (max-width: 768px) {
     .navbar {
