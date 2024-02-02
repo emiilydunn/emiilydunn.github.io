@@ -64,7 +64,7 @@ body {
 .grid-container {
     display: grid;
     gap: 20px;
-    margin: 20px;
+    margin: 100px;
     border: 5px solid black;
     background-color: white;
 }
@@ -78,7 +78,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 1250px; /* Adjust the maximum width as needed */
+    width: 1000px; /* Adjust the maximum width as needed */
     height: 250px;
     margin: auto; /* Center the grid item horizontally */
     margin-top: 20px;
